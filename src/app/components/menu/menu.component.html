@@ -2,8 +2,17 @@
     <!-- Main bar -->
     <div class="row">
         <!-- A column for each option -->
-        <div *ngFor="let o of options" class="col">
-
+        <div *ngFor="let o of options; let i = index" class="col menuOption blueBackground whiteText" (click)="openSubMenu(i)">
+            <div class="row">
+                {{o.name}}
+            </div>
+            <div id="{{'s' + i}}" class="deselected">
+                <div *ngFor="let s of subOptions" [hidden]="subMenuHidden[i]" >
+                    <div class="row menuSubOption blueBackground whiteText">
+                        {{s.mainMenuName === o.name ? s.name : ''}}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

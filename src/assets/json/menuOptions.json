@@ -1,0 +1,34 @@
+{
+    "options": [
+        {
+            "name": "File",
+            "subOptions": {
+                "actions" : [
+                    {
+                        "name": "Save",
+                        "action": "saveFileFunction"
+                    },
+                    {
+                        "name": "Load",
+                        "action": "loadFileFunction"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "View",
+            "subOptions": {
+                "actions": [
+                    {
+                        "name": "Zoom In",
+                        "action": "zoomInFunction"
+                    },
+                    {
+                        "name": "Zoom Out",
+                        "action": "zoomOutFunction"
+                    }
+                ]
+            }
+        }
+    ]
+}

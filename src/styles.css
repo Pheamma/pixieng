@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+.cyanBackground {
+    background-color: #01BAEF;
+}
+
+.cyanText {
+    color: #01BAEF;
+}
+
+.redBackground {
+    background-color: #B80C09;
+}
+
+.redText {
+    color: #B80C09;
+}
+
+.blueBackground {
+    background-color: #0B4F6C;
+}
+
+.blueText {
+    color: #0B4F6C;
+}
+
+.whiteBackground {
+    background-color: #FBFBFF;
+}
+
+.whiteText {
+    color: #FBFBFF;
+}
+
+.blackBackground {
+    background-color: #040F16;
+}
+
+.blackText {
+    color:#040F16;
+}
