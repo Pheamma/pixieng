@@ -1,8 +1,8 @@
-<div class="container-fluid">
+<div class="container-fluid blueBackground menuBarBorders">
     <!-- Main bar -->
     <div class="row">
         <!-- A column for each option -->
-        <div *ngFor="let o of options; let i = index" class="col menuOption blueBackground whiteText" (click)="openSubMenu(i)">
+        <div *ngFor="let o of options; let i = index" class="col-1 text-center menuOption blueBackground whiteText" (click)="openSubMenu(i)">
             <div class="row">
                 {{o.name}}
             </div>
