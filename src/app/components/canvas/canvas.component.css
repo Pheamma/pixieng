@@ -1,0 +1,22 @@
+.canvas {
+    background-color: white;
+}
+
+.cell {
+    background-color: whitesmoke;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
+.myCol {
+    flex: 0;
+}
+
+.myRow {
+    display: flex;
+}

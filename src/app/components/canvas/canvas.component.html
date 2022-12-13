@@ -1,3 +1,15 @@
-<div class="canvas" style="background-color: white;">
-
+<div id="canvasId" class="canvas">
+    <div class="grid" [hidden]="gridHidden">
+        <!-- Grid -->
+    </div>
+    <div *ngFor="let x of dimX" class="myRow">
+        <div *ngFor="let y of dimY" class="myCol">
+            <div id="{{'c' + x + '/' + y }}" class="cell"
+            (mousemove)="onMouseOver($event)" (mousedown)="onMouseOver($event)" 
+            (mouseup)="onMouseOver($event)" (dragstart)="onMouseOver($event)"
+            (dragend)="onMouseOver($event)">
+                <!-- Cell -->
+            </div>
+        </div>
+    </div>
 </div>

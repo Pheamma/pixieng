@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PanelComponent implements OnInit {
 
+  chosenColour : any;
+
   constructor() { }
 
   ngOnInit(): void {

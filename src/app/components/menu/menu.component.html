@@ -1,12 +1,12 @@
 <div class="container-fluid blueBackground menuBarBorders">
     <!-- Main bar -->
-    <div class="row">
+    <div class="row myRow">
         <!-- A column for each option -->
-        <div *ngFor="let o of options; let i = index" class="col-1 text-center menuOption blueBackground whiteText" (click)="openSubMenu(i)">
-            <div class="row">
+        <div *ngFor="let o of options; let i = index" class="col-1 text-center blueBackground whiteText">
+            <div class="row menuOption" (click)="openSubMenu(i)">
                 {{o.name}}
             </div>
-            <div id="{{'s' + i}}" class="deselected">
+            <div id="{{'s' + i}}" class="optionsBox deselected">
                 <div *ngFor="let s of subOptions" [hidden]="subMenuHidden[i]" >
                     <div class="row menuSubOption blueBackground whiteText">
                         {{s.mainMenuName === o.name ? s.name : ''}}

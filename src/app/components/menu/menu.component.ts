@@ -26,11 +26,11 @@ export class MenuComponent implements OnInit {
 
   openSubMenu(index : number){
     this.subMenuHidden[index] = !this.subMenuHidden[index];
-    document.getElementById('s' + index)!.className = 'selected';
+    document.getElementById('s' + index)!.className.replace('deselected', 'selected');
     for(let i = 0; i < this.subMenuHidden.length; i++){
       if(i != index && this.subMenuHidden[i] === false){
         this.subMenuHidden[i] = true;
-        document.getElementById('s' + i)!.className = 'deselected';
+        document.getElementById('s' + i)!.className.replace('selected', 'deselected');
 
       }
     }
